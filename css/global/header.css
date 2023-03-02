@@ -1,34 +1,30 @@
 .header-bg {
-  background-color: #000000;
+  background-color: var(--cor-12);
 }
 .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
   gap: 20px;
-  color: whitesmoke;
-  margin: auto auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 
 .header-menu {
   display: flex;
   gap: 40px;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
 }
 .header-menu a {
-  font-family: "Poppins", sans-serif;
-  color: white;
   padding: 16px 0px;
-  font-weight: 500;
+  color: var(--cor-0);
   border-radius: 4px;
-  font-size: 18px;
   position: relative;
 }
 
@@ -39,13 +35,12 @@
   height: 3px;
   transition: 0.3s;
   position: absolute;
-  background-color: #000000;
 }
 
 .header-menu a:hover::after {
   width: 100%;
   transition: 0.3s;
-  background-color: #ffffff;
+  background-color: var(--cor-0);
 }
 
 @media (max-width: 700px) {
@@ -54,8 +49,8 @@
   }
   .header-menu a {
     padding: 12px 10px;
-    font-size: 13px;
-    background-color: #111;
+    font-size: 0.875rem;
+    background-color: var(--cor-11);
   }
   .header {
     justify-content: center;
@@ -65,9 +60,16 @@
   }
 }
 
+@media (max-width: 500px) {
+  .header-menu a {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+  }
+}
+
 @media (max-width: 300px) {
   .header-menu a {
-    padding: 10px 10px;
-    font-size: 12px;
+    padding: 6px 8px;
+    font-size: 0.625rem;
   }
 }

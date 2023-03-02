@@ -1,12 +1,10 @@
 .introducao-bg {
-  background-color: #000000;
+  background-color: var(--cor-12);
 }
 
 .introducao {
   display: grid;
-  grid-template-columns: 6fr 6fr;
-  background: #000000;
-  color: white;
+  grid-template-columns: 6fr 6fr; 
   max-width: 1200px;
   margin: auto;
   gap: 0px 20px;
@@ -21,7 +19,7 @@
 .introducao img {
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
+
 }
 
 .introducao-conteudo {
@@ -30,46 +28,38 @@
 }
 
 .introducao-conteudo h1 {
-  font-size: 64px;
-  line-height: 1.125;
   margin-top: 120px;
-  font-family: "Poppins", sans-serif;
   margin-bottom: 32px;
-  font-weight: 600;
 }
 
 .introducao-conteudo h1 span {
-  color: #ffbb00;
+  color: var(--cor-p1);
+  padding: 0px;
 }
 
 .introducao-conteudo p {
-  font-size: 24px;
-  line-height: 1.5;
-  font-family: "Roboto", sans-serif;
-  color: #b2b2b2;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
 @media (max-width: 1100px) {
   .introducao-conteudo h1 {
-    font-size: 50px;
+    font-size: 3rem;
     margin-top: 40px;
   }
 
   .introducao-conteudo p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 950px) {
   .introducao-conteudo h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
 
   .introducao-conteudo p {
-    font-size: 18px;
+    font-size: 	1rem;
   }
 
   .introducao-conteudo {
@@ -79,7 +69,7 @@
 
 @media (max-width: 800px) {
   .introducao {
-    background-color: #111;
+    background-color: var(--cor-11);
     gap: 0px;
     grid-template-columns: 1fr;
   }
@@ -94,7 +84,7 @@
 
 @media (max-width: 520px) {
   .introducao-conteudo h1 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
   .introducao-imagem {
@@ -104,21 +94,18 @@
     margin-bottom: 18px;
   }
   .introducao-conteudo p {
-    font-size: 15px;
+    font-size: 0.75rem;
   }
 }
 
 @media (max-width: 380px) {
   .introducao-conteudo h1 {
-    font-size: 28px;
+    font-size: 	1.5rem;
     margin-top: 30px;
     margin-bottom: 18px;
   }
   .introducao-imagem {
     margin-bottom: -30px;
-  }
-  .introducao-conteudo p {
-    font-size: 12px;
   }
 
   .introducao-imagem {
@@ -128,24 +115,23 @@
 
 @media (max-width: 330px) {
   .introducao-conteudo h1 {
-    font-size: 24px;
     margin-bottom: 12px;
   }
 
   .introducao-conteudo p {
-    font-size: 10px;
+    font-size: 0.625rem;
     margin-bottom: 12px;
   }
 }
 
 @media (max-width: 260px) {
   .introducao-conteudo h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 12px;
   }
 
   .introducao-conteudo p {
-    font-size: 8px;
+    font-size: 0.5rem;
     margin-bottom: 12px;
   }
 }
