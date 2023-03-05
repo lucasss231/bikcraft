@@ -24,6 +24,7 @@
 .plano-itens {
   flex: 1;
   gap: 0px;
+  padding-right: 20px;
   background: var(--cor-12);
   display: grid;
   border-radius: 5px;
@@ -31,7 +32,6 @@
 }
 
 .plano-itens h3 {
-  color: aliceblue;
   margin-bottom: 40px;
   padding-left: 30px;
   margin-right: 50px;
@@ -42,20 +42,17 @@
 
 .plano-itens span {
   display: grid;
-  height: 100%;
-  width: 100%;
-  padding-top: 0px;
- 
-  padding-right: 20px;
+
+  padding-top: 10px;
+
+  text-align: right;
   white-space: nowrap;
   color: var(--cor-0);
-  align-items: flex-end;
+  display: block;
 }
 
 .plano-itens .mensalidade {
   color: var(--cor-6);
-   margin-bottom: -5px;
-  align-items: flex-start;
 }
 
 .plano-itens ul li {
@@ -66,6 +63,17 @@
   margin-right: 20px;
 }
 
+.plano-itens ul li::before {
+  content: "";
+  width: 13px;
+  display: inline-block;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+  color: aliceblue;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+}
+
 .plano-itens a {
   grid-column: 1;
   grid-row: 3;
@@ -73,28 +81,29 @@
   justify-self: flex-start;
   margin: 10px 20px 50px 30px;
 }
-@media(max-width: 884px) {
+@media (max-width: 884px) {
   .plano-itens span {
     display: grid;
     width: 300px;
     padding-top: 15px;
- justify-items: center;
-align-items: center;
+    justify-items: center;
+    align-items: center;
   }
   .plano-itens .mensalidade {
     display: grid;
     width: 300px;
     padding-top: 0px;
- justify-items: center;
-align-items: flex-start;
+    justify-items: center;
+    align-items: flex-start;
   }
 }
 @media (max-width: 600px) {
   .plano-itens {
     min-width: 250px;
   }
+
   .plano-itens h3 {
-    font-size:1.5rem ;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 
@@ -104,13 +113,13 @@ align-items: flex-start;
   }
   .plano-itens ul li {
     font-size: 1rem;
-    border-bottom: 3px solid var(--cor-9);
+    border-bottom: 2px solid var(--cor-11);
   }
 
   .plano-itens span {
     grid-row: 3;
     grid-column: 1;
-    width:100%;
+    width: 100%;
     height: 100%;
     padding: 10px 0px 10px 0px;
     margin: 0px 0px 0px 0px;
@@ -118,11 +127,8 @@ align-items: flex-start;
   }
 
   .plano-itens .mensalidade {
-    grid-row: 3;
     width: 100%;
     padding: 0px 0px 10px 0px;
-    margin: 0px 0px 0px 0px;
-    
     font-size: 0.7rem;
   }
   .plano-itens a {
@@ -132,7 +138,7 @@ align-items: flex-start;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .seguros {
     gap: 40px;
   }
@@ -141,10 +147,8 @@ align-items: flex-start;
   }
   .plano-itens ul li {
     font-size: 0.8rem;
-   
   }
   .plano-itens span {
-  
     font-size: 1rem;
   }
 }

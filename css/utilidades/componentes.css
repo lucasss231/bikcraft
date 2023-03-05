@@ -7,6 +7,7 @@
   margin-right: auto;
 }
 
+
 .botao {
   font-size: 1.125rem;
   line-height: 1.33;
@@ -42,3 +43,38 @@
     padding: 10px 14px;
   }
 }
+
+
+.titulo-bg {
+  padding: 60px 0px;
+  background: var(--cor-11);
+}
+
+.titulo p {
+margin-bottom: 8px;
+
+color: var(--cor-10);
+}
+
+@media (max-width:800px) {
+  .titulo-bg {
+    padding: 40px 0px;
+    background: var(--cor-11);
+  }
+}
+
+@media (max-width:500px) {
+  .titulo-bg {
+    padding: 25px 0px;
+    background: var(--cor-11);
+  }
+}
+
+@media (max-width:298px) {
+  .titulo h1 {
+    font-size: 1.25rem;
+  }
+}
+
+
+
