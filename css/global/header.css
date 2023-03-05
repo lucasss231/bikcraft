@@ -52,9 +52,7 @@
     font-size: 0.875rem;
     background-color: var(--cor-11);
   }
-  .header {
-    justify-content: center;
-  }
+ 
   .header-menu a::after {
     content: none;
   }
@@ -62,7 +60,7 @@
 
 @media (max-width: 500px) {
   .header-menu a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     padding: 8px 10px;
   }
 }
@@ -70,6 +68,5 @@
 @media (max-width: 300px) {
   .header-menu a {
     padding: 6px 8px;
-    font-size: 0.625rem;
   }
 }

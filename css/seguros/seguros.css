@@ -1,0 +1,150 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+  padding: 1px;
+}
+.seguros-bg h2 {
+  justify-self: flex-start;
+  width: 100%;
+  padding-left: 60px;
+  color: var(--cor-0);
+}
+
+.seguros {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding: 60px 32px 60px 32px;
+  align-items: center;
+}
+
+.seguros h2 span {
+  color: var(--cor-p1);
+}
+
+.plano-itens {
+  flex: 1;
+  gap: 0px;
+  background: var(--cor-12);
+  display: grid;
+  border-radius: 5px;
+  grid-template-columns: 1fr auto;
+}
+
+.plano-itens h3 {
+  color: aliceblue;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  margin-right: 50px;
+  height: 100%;
+  padding-top: 20px;
+  align-self: flex-start;
+}
+
+.plano-itens span {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding-top: 0px;
+ 
+  padding-right: 20px;
+  white-space: nowrap;
+  color: var(--cor-0);
+  align-items: flex-end;
+}
+
+.plano-itens .mensalidade {
+  color: var(--cor-6);
+   margin-bottom: -5px;
+  align-items: flex-start;
+}
+
+.plano-itens ul li {
+  color: var(--cor-0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.plano-itens a {
+  grid-column: 1;
+  grid-row: 3;
+  white-space: nowrap;
+  justify-self: flex-start;
+  margin: 10px 20px 50px 30px;
+}
+@media(max-width: 884px) {
+  .plano-itens span {
+    display: grid;
+    width: 300px;
+    padding-top: 15px;
+ justify-items: center;
+align-items: center;
+  }
+  .plano-itens .mensalidade {
+    display: grid;
+    width: 300px;
+    padding-top: 0px;
+ justify-items: center;
+align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .plano-itens {
+    min-width: 250px;
+  }
+  .plano-itens h3 {
+    font-size:1.5rem ;
+    margin-bottom: 10px;
+  }
+
+  .plano-itens ul {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .plano-itens ul li {
+    font-size: 1rem;
+    border-bottom: 3px solid var(--cor-9);
+  }
+
+  .plano-itens span {
+    grid-row: 3;
+    grid-column: 1;
+    width:100%;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.2rem;
+  }
+
+  .plano-itens .mensalidade {
+    grid-row: 3;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    
+    font-size: 0.7rem;
+  }
+  .plano-itens a {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+  }
+}
+
+@media (max-width:400px) {
+  .seguros {
+    gap: 40px;
+  }
+  .plano-itens {
+    min-width: auto;
+  }
+  .plano-itens ul li {
+    font-size: 0.8rem;
+   
+  }
+  .plano-itens span {
+  
+    font-size: 1rem;
+  }
+}

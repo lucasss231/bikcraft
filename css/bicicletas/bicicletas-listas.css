@@ -55,12 +55,14 @@ span {
 
 @media (max-width: 900px) {
   .bicletas-bg h2 {
+    margin-top: 125px;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 600px) {
   .bicletas-bg h2 {
+    margin-top: 90px;
     margin-bottom: 20px;
   }
   .bicicletas h3 {

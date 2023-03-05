@@ -18,6 +18,7 @@
 
 .introducao img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 
 }
@@ -94,7 +95,7 @@
     margin-bottom: 18px;
   }
   .introducao-conteudo p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -119,19 +120,7 @@
   }
 
   .introducao-conteudo p {
-    font-size: 0.625rem;
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 260px) {
-  .introducao-conteudo h1 {
-    font-size: 1.25rem;
-    margin-bottom: 12px;
-  }
-
-  .introducao-conteudo p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-bottom: 12px;
   }
 }
