@@ -74,6 +74,12 @@
     gap: 0px;
     grid-template-columns: 1fr;
   }
+
+  .introducao-conteudo h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
   .introducao-imagem {
     margin-bottom: -80px;
   }

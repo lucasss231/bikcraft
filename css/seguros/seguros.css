@@ -113,7 +113,10 @@
   }
   .plano-itens ul li {
     font-size: 1rem;
-    border-bottom: 2px solid var(--cor-11);
+  }
+
+  .plano-itens ul li:nth-last-child(1) {
+    border-bottom: 3px solid var(--cor-11);
   }
 
   .plano-itens span {

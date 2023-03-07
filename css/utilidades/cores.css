@@ -18,7 +18,9 @@
   --cor-p2: #e4a30b;
   --cor-p1: #ffbb00;
 }
-
+.cor-8 {
+  color: #595959;
+}
 .cor-0 {
   color: #ffffff;
 }
