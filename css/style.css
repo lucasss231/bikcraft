@@ -17,12 +17,24 @@
 /* Bicicletas */ 
 @import "./bicicletas/bicicletas-listas.css";
 @import "./bicicletas/bicicletas.css";
+@import "./bicicletas/bicicleta-nimbus.css";
 
 /* Seguro */
 @import "./seguros/seguros.css";
+@import "./seguros/seguros.vantagen.css";
+@import "./bicicletas/seguros-bicicleta.css";
 
 /* Footer */
 @import "./global/footer.css";
 
 /* Termos */ 
 @import "./termos/termos.css";
+
+/* Perguntas */
+@import "./perguntas/perguntas.css";
+
+/* Contatos */
+@import "./contatos/contatos.css";
+
+/* Formulario */ 
+@import "../css/formulario/formulario.css"

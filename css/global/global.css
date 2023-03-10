@@ -4,7 +4,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 h1,
 h2,
 h3,
@@ -22,6 +21,11 @@ p {
   margin: 0px;
 }
 
+dl,dt,dd {
+  margin: 0px;
+  padding: 0px;
+}
+
 a,
 ul,
 li {
@@ -35,8 +39,9 @@ a {
 }
 img {
   max-width: 100%;
-  display: block;
 }
+
+
 img[src$=".jpg"] {
   border-radius: 5px;
 }
@@ -44,4 +49,8 @@ img[src$=".jpg"] {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
 }

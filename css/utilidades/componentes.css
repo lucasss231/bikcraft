@@ -7,6 +7,10 @@
   margin-right: auto;
 }
 
+.grid-column {
+  grid-column: 1/-1;
+}
+
 
 .botao {
   font-size: 1.125rem;
@@ -46,30 +50,31 @@
   }
 }
 
-
 .titulo-bg {
-  padding: 60px 0px;
+  padding: 20px 0px 20px 10px;
   background: var(--cor-11);
 }
 
+.titulo {
+  padding: 0px 30px;
+}
 .titulo p {
 margin-bottom: 8px;
-
-color: var(--cor-10);
 }
 
-@media (max-width:800px) {
-  .titulo-bg {
-    padding: 40px 0px;
-    background: var(--cor-11);
-  }
+.titulo h1 {
+  margin: 0px;
+  
 }
+
+.seguro-bg-variavel {
+  padding-top: 80px;
+}
+
+
 
 @media (max-width:500px) {
-  .titulo-bg {
-    padding: 25px 0px;
-    background: var(--cor-11);
-  }
+  
   .titulo p {
     font-size: 1.2rem;
   }

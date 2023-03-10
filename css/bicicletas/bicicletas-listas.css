@@ -71,4 +71,8 @@ span {
   .bicicletas span {
     font-size: 0.8;
   }
+  .bicletas-bg h2 {
+    margin-top: 50px;
+
+    }
 }
